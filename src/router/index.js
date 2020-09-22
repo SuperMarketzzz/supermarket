@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Welcome from '@/components/Welcome'
 import Login from '@/components/Login'
+import Register from '@/components/Register'
+import Main from '@/components/Main'
 
 Vue.use(Router)
 
@@ -16,6 +18,16 @@ const router = new Router({
       path: '/welcome',
       name: 'Welcome',
       component: Welcome
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register
+    },
+    {
+      path: '/main',
+      name: 'Main',
+      component: Main
     }
   ]
 })
